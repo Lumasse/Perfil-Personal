@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #ffd000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Dos columnas: una para nombre/contacto y otra para trayectoria/certificaciones */
+    grid-template-rows: auto auto; /* Dos filas para distribuir verticalmente */
+    grid-gap: 20px; /* Espacio entre los paneles */
+    padding: 20px;
+}
+
+.header {
+    grid-column: 1 / 2; /* Ocupa la primera columna */
+    grid-row: 1; /* Primera fila */
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.profile-img {
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: 150px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.contact {
+    grid-column: 1 / 2; /* Sigue ocupando la primera columna */
+    grid-row: 2; /* Segunda fila */
+    background-color: #e0e0e0; /* Color gris */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.main-content {
+    grid-column: 2 / 3; /* Ocupa la segunda columna */
+    grid-row: 1 / 2; /* Ocupa la primera y segunda fila, es decir, toda la altura de las dos primeras filas */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.title-with-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.small-icon {
+    width: 30px; /* Tamaño pequeño de la imagen */
+    height: 30px;
+    margin-right: 10px;
+}
+
+.certifications {
+    grid-column: 2 / 2; /* Ocupa la segunda columna */
+    grid-row: 2; /* Tercera fila */
+    background-color: #e0e0e0; /* Color gris */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.footer {
+    grid-column: 1 / 3; /* Ocupa ambas columnas en la parte inferior */
+    grid-row: 3;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.lista-personalizada {
+    margin-left: 20px; /* Ajusta la distancia entre la viñeta y el borde del panel */
+    padding-left: 20px; /* Ajusta la distancia entre el contenido y la viñeta */
+}
+
+.lista-personalizada li {
+    margin-bottom: 10px; /* Añade espacio entre cada elemento de la lista */
+}
+
+h2 {
+    margin: 0;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
